@@ -1,0 +1,329 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&family=Sixtyfour&display=swap');
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', Helvetica;
+  /* font-family: 'Helvetica', Arial, sans-serif; */
+
+  font-weight:100;
+}
+
+.button-class {
+  /*font-family: 'Inter', Helvetica !important;*/
+  /* font-family: 'Helvetica', Arial, sans-serif; */
+
+}
+
+h1, h2, h3, h4 {
+  /* font-family: 'Inter', Helvetica !important; */
+  /*font-family: 'Helvetica', Arial, sans-serif;*/
+}
+
+.scrolling-grid button {
+  /*font-family: 'Helvetica', Arial, sans-serif;font-family: 'Inter', Helvetica !important;*/
+  /* font-family: 'Helvetica', Arial, sans-serif; */
+  text-transform:uppercase;
+  font-weight:700;
+  font-size:14px;
+  letter-spacing: 1px;
+}
+
+
+h1 {
+  font-weight:900 !important;
+  line-height:1em;
+}
+
+.desktop-nav-link {
+  /* font-family: 'Inter', Helvetica !important; */
+
+}
+
+/* If you want to apply to all Material Tailwind buttons */
+.material-tailwind-button {
+  /* font-family: 'Inter', Helvetica !important; */
+}
+
+.bold-placeholder::placeholder {
+  font-weight: bold; /* This makes the placeholder text bold */
+}
+
+.tokensInput {
+  width:200px;
+  border:1px solid black;
+  font-size:20px;
+  border-radius:10px;
+  text-align:center;
+  padding:10px;
+  display:block;
+  margin: 10px auto;
+}
+
+.hexagon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px; /* Adjust as needed */
+}
+
+@media (max-width: 600px) { /* Adjust breakpoint as needed */
+  .hexagon-container {
+    flex-direction: column;
+  }
+}
+
+.hexagon-icon {
+  background-image: url('/hex-icon-empty.png'); /* Path to your image in the public folder */
+  background-size: contain; /* Ensures the entire image is visible */
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Adjust based on the size of your hexagon image */
+  height: 200px; /* Adjust to maintain aspect ratio of the hexagon */
+}
+
+/*
+.scrolling-wrapper {
+ overflow: hidden;
+ white-space: nowrap;
+}
+
+.scrolling-grid {
+  display: flex;
+  animation: scroll-horizontal 20s linear infinite;
+}
+
+@media (max-width: 600px) { 
+  .scrolling-grid {
+    animation: scroll-horizontal 10s linear infinite;
+  }
+}
+
+@keyframes scroll-horizontal {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+*/
+
+.scrolling-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-content {
+  display: flex;
+  animation: scroll-left 15s linear infinite;
+}
+
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+.scroll-item {
+  
+  /*flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  */
+  min-height:200px;
+  margin:0px 10px !important;
+  padding:50px;
+}
+
+.react-multiple-carousel__arrow {
+	background-color: rgba(0,0,0,0.5) !important;
+}
+
+.react-multi-carousel-list.container-with-dots {
+	width: 100%;
+}
+
+
+.chartContainer {
+  /* Set the border width */
+  padding: 3px; 
+
+  /* Create a gradient background */
+  background: linear-gradient(90deg, #4f6df4, #33aef6);
+
+  /* Create an inner element to cover the background, making it look like a border */
+  position: relative;
+}
+
+.chartContainer::after {
+  content: '';
+  position: absolute;
+  top: 3px; /* Same as padding */
+  left: 3px; /* Same as padding */
+  right: 3px; /* Same as padding */
+  bottom: 3px; /* Same as padding */
+  background: white; /* Color of your main element */
+  border-radius: calc(0.5rem - 3px); /* Adjust the border-radius if needed, subtracting the padding */
+  z-index: -1;
+}
+
+input {
+	color: black;
+  font-weight: 200 !important;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tailwind CSS */
+.bg-white {
+  background-color: #ffffff;
+}
+.dark .bg-white {
+  background-color: #000000; /* This will be applied when dark mode is active */
+}
+
+.main-page-button {
+  border: 1px solid navy;
+  padding: 10px 20px;
+  border-radius: 20px; /* Adjust as necessary */
+  display: flex;
+  align-items: center;
+  background: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.leadership-section {
+  text-align: center;
+}
+
+.leadership-header {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.leadership-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.leadership-card {
+  width: 200px; /* or any appropriate size */
+  text-align: center;
+}
+
+.icon-wrapper {
+  margin: auto;
+  width: 100px; /* Adjust size accordingly */
+  height: 100px; /* Adjust size accordingly */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* Your icon background color */
+  border: 1px solid navy;
+  margin-bottom: 1em;
+}
+
+.role-title {
+  font-weight: bold;
+}
+
+.hiring-notice {
+  margin-top: 2em;
+}
+
+.linkedin:hover, .email:hover {
+  font-weight: bold;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin3d {
+  0% {
+    transform: perspective(600px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(600px) rotateY(360deg);
+  }
+}
+
+/* .logo {
+  animation: spin3d 5s linear infinite;
+}
+
+#navbar a.active {
+  position: relative;
+}
+
+#navbar a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px; 
+  width: 100%;
+  height: 3px; 
+  background-color: blue;
+}
+.custom-container {  
+  max-width: 100%; 
+  margin-top: 5rem; 
+  margin-left: 15rem;
+  margin-right: 15rem;
+  background-color: black;
+  border-radius: 10px; 
+}
+.line{
+  color: #000000;
+  border: #000000;
+  margin-left: 15rem;
+  margin-right: 15rem; 
+} */
+
+@media screen and (min-width: 1980px) {
+  :root{
+    font-size: .8vw;
+  }
+}
+@media (max-width: 765px) {
+  h1 {
+    font-size: 20px !important;
+    font-weight:600 !important;
+  }
+}
+

@@ -1,0 +1,54 @@
+{
+  "private": true,
+  "scripts": {
+    "preinstall": "npm install react-multi-carousel@2.8.5 --legacy-peer-deps",
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@ledgerhq/hw-app-xrp": "^6.28.4",
+    "@ledgerhq/hw-transport-node-hid": "^6.28.4",
+    "@ledgerhq/hw-transport-u2f": "^5.36.0-deprecated",
+    "@ledgerhq/hw-transport-webusb": "^6.28.4",
+    "@material-tailwind/react": "^2.1.7",
+    "@trezor/connect": "^9.2.1",
+    "@trezor/connect-web": "^9.2.1",
+    "axios": "^1.6.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.0",
+    "eslint-config-next": "^14.0.4",
+    "firebase": "^10.7.2",
+    "firebase-admin": "^12.0.0",
+    "i": "^0.3.7",
+    "install": "^0.13.0",
+    "next": "^14.0.4",
+    "node-fetch": "^3.3.2",
+    "npm": "^10.5.1",
+    "qrcode.react": "^3.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-iframe": "^1.8.5",
+    "react-multi-carousel": "^2.8.5",
+    "react-twitter-embed": "^4.0.4",
+    "ripple-binary-codec": "^2.0.0",
+    "uuid": "^9.0.1",
+    "victory": "^36.8.1",
+    "xrpl": "^2.13.0",
+    "xumm": "^1.7.6",
+    "xumm-sdk": "^1.11.0"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "sass": "^1.75.0",
+    "tailwindcss": "^3.3.6"
+  }
+}
