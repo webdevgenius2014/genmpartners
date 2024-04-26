@@ -40,6 +40,7 @@ module.exports = withMT({
       },
       margin: {
         '15': '.938rem',
+        '7.5': '1.875rem'
       }
     },
     container: {
