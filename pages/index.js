@@ -54,8 +54,15 @@ export default function Dashboard({ darkMode, toggleDarkMode }) {
             </div>
           </div>
           {/*section Two */}
-          <div className='container sm:text-center'>
-
+          <div className='container mx-auto sm:text-center mt-[99px]'>
+            <div className='text-subHeading text-primary-300 font-bold'>Earn Real Yields On-chain With</div>
+            <h2 className='text-heading text-black font-bold'>Our Hold-to-Earn  
+                <span classname="relative">
+                 Products
+                <span classname="block absolute bottom-0 left-0 w-full height-[2px] bg-gradient-to-r from-90deg from-[#35AFF8] via-0% to-[#506EF6] to-100%"></span>
+              </span>
+            </h2>
+            <p className='text-17xl text-[#535353] font-bold max-w-[688px] mx-auto mt-7.5'>Gen. M Partners specializes in the issuance of security tokens, bridging private and public markets with digital assets.</p>
           </div>
 
           {/* old page sections */}
