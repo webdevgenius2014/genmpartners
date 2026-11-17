@@ -2,9 +2,9 @@
   "private": true,
   "scripts": {
     "preinstall": "npm install react-multi-carousel@2.8.5 --legacy-peer-deps",
-    "build": "node init && next build",
-    "dev": "node init && next dev",
-    "start": "node init && next start"
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
